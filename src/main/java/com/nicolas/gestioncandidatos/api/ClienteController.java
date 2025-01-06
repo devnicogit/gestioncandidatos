@@ -23,12 +23,7 @@ public class ClienteController {
         ClienteDTO registrado = clienteService.registrarCliente(clienteDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(registrado);
     }
-
-    @GetMapping
-    public ResponseEntity<List<ClienteDTO>> listarClientes() {
-        return ResponseEntity.ok(clienteService.listarClientes());
-    }
-
+    
     @GetMapping
     public ResponseEntity<List<ClienteDTO>> listarClientesConEsperanzaDeVida() {
         return ResponseEntity.ok(clienteService.listarClientesConEsperanzaDeVida());
