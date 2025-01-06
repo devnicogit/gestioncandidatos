@@ -1,0 +1,4 @@
+ALTER TABLE cliente
+ADD COLUMN sexo VARCHAR(1),
+ADD COLUMN estado_salud VARCHAR(50),
+ADD COLUMN habitos_vida VARCHAR(50);
